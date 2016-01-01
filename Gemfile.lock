@@ -3,7 +3,7 @@ PATH
   specs:
     letsencrypt_plugin (0.0.6)
       acme-client (~> 0.2.4)
-      rails (~> 4.2.5)
+      rails (~> 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -150,6 +150,3 @@ DEPENDENCIES
   minitest
   rubocop
   sqlite3
-
-BUNDLED WITH
-   1.11.2
