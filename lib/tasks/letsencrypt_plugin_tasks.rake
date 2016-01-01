@@ -100,7 +100,7 @@ task letsencrypt_plugin: :setup_logger do
     else
       Rails.logger.error("Output directory: '#{File.join(Rails.root, CONFIG[:output_cert_dir])}' does not exist!")
     end
-  end unless certificate.nil?
+  end
 
   generate_certificate
 end
