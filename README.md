@@ -4,7 +4,10 @@
 `letsencrypt-plugin` is a Ruby on Rails helper for [Let's Encrypt](https://letsencrypt.org/) service for retrieving SSL certificates (without using sudo, like original letsencrypt client does). It uses [acme-client](https://github.com/unixcharles/acme-client) gem for communication with Let's Encrypt server.
 
 **Important note:** As of version 0.0.3 of this gem dependency to SQLite has been removed (it can be used on [Heroku](https://www.heroku.com/) - certificates will be displayed on console, after that please follow [SSL-Endpoint](https://devcenter.heroku.com/articles/ssl-endpoint) guide), but it still need database to store challenge response, so you have to add some database gem to your application (ie. pg, mysql or sqlite)
- 
+
+# Note
+
+When using this gem, please disable `forse ssl` first.
 
 ## Installation
 
